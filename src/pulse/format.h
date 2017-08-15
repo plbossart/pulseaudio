@@ -56,6 +56,12 @@ typedef enum pa_encoding {
     PA_ENCODING_MPEG2_AAC_IEC61937,
     /**< MPEG-2 AAC data encapsulated in IEC 61937 header/padding. \since 4.0 */
 
+    PA_ENCODING_TRUEHD_IEC61937,
+    /**< Dolby TrueHd data encapsulated in IEC 61937 header/padding. \since 11.0 */
+
+    PA_ENCODING_DTSHD_IEC61937,
+    /**< DTS HD-MasterAudio encapsulated in IEC 61937 header/padding. \since 11.0 */
+
     PA_ENCODING_MAX,
     /**< Valid encoding types must be less than this value */
 
@@ -71,6 +77,8 @@ typedef enum pa_encoding {
 #define PA_ENCODING_MPEG_IEC61937 PA_ENCODING_MPEG_IEC61937
 #define PA_ENCODING_DTS_IEC61937 PA_ENCODING_DTS_IEC61937
 #define PA_ENCODING_MPEG2_AAC_IEC61937 PA_ENCODING_MPEG2_AAC_IEC61937
+#define PA_ENCODING_DOLBY_TRUEHD_IEC61937 PA_ENCODING_DOLBY_TRUEHD_IEC61937
+#define PA_ENCODING_DTS_MA_IEC61937 PA_ENCODING_DTS_MA_IEC61937
 #define PA_ENCODING_MAX PA_ENCODING_MAX
 #define PA_ENCODING_INVALID PA_ENCODING_INVALID
 /** \endcond */
